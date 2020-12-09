@@ -38,6 +38,9 @@ def main():
     issue_link = github_event_json["issue"]["html_url"]
 
     print("action_type is",action_type)
+    print("state_open is",state_open)
+    print("state_closed is",state_closed)
+    print("property_name is",property_name)
 
     # Check action type
     if action_type == "opened":
